@@ -68,6 +68,9 @@ jobs:
 
     - name: Deploy website
       run: |
-        DEPLOY_CMD="yes | bin/deploy --verbose --src '${{ steps.setup.outputs.SRC_BRANCH }}' --deploy '${{ steps.setup.outputs.DEPLOY_BRANCH }}'"
-        if [ -n "${{ steps.setup.outputs.NO_PUSH }}" ]; then
-          DEPLOY_CMD="$DEPLOY_CMD ${{ steps.setup.
+          DEPLOY_CMD="yes | bin/deploy --verbose --src '${{ steps.setup.outputs.SRC_BRANCH }}' --deploy '${{ steps.setup.outputs.DEPLOY_BRANCH }}'"
+          if [ -n "${{ steps.setup.outputs.NO_PUSH }}" ]; then
+            DEPLOY_CMD="$DEPLOY_CMD ${{ steps.setup.outputs.NO_PUSH }}"
+          fi
+          echo "Running: $DEPLOY_CMD"
+          eval "$DEPLOY_CMD"
