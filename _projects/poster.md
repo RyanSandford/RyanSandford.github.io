@@ -1,9 +1,9 @@
 ---
 layout: page
-title: Intersection Multiplicity Poster
+title: Ontario Research Centre for Computer Algebra Poster
 description: An overview of the generalization of Fulton's intersection multiplicity algorithm
 img: /assets/img/poster_thumbnail.png
-importance: 3
+importance: 4
 category: work
 ---
 

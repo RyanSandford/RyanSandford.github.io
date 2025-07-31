@@ -3,7 +3,7 @@ layout: page
 title: Regular Chains Library Developer
 description: Developed tools for the regular chains library
 img: /assets/img/regular_chains_thumbnail.png
-importance: 1
+importance: 2
 category: work
 ---
 
@@ -23,7 +23,7 @@ of previous algorithms. A paper on this work and the resulting performance impro
 is underway and will be made available shortly.
 For now, the corresponding slides can be found [here](https://ryansandford.github.io/assets/pdf/MC2021_slides.pdf).
 
-The _ReguarChains_ library is available through [Maple](https://www.maplesoft.com/products/Maple/) or through the regular chains website [here](http://www.regularchains.org/).
+The _RegularChains_ library is available through [Maple](https://www.maplesoft.com/products/Maple/) or through the regular chains website [here](http://www.regularchains.org/).
 
 <div class="row">
     <div class="col-sm mt-3 mt-md-0">

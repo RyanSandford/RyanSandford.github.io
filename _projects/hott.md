@@ -3,7 +3,7 @@ layout: page
 title: Lean 3 Homotopy Type Theory Library Contribution
 description: Contributed formalized proofs regarding the notion of the 2-adjoint equivalence to the open source Homotopy Type Theory Library in Lean 3
 img: /assets/img/HOTT_thumbnail.png
-importance: 2
+importance: 3
 category: work
 ---
 

@@ -3,7 +3,7 @@ layout: page
 title: Classifiers for Predicting the Success of the Generalization of Fulton’s Intersection Multiplicity Algorithm
 description: In this paper we propose properties of polynomial systems which we believe may correspond to the success of the Generalization of Fulton’s Intersection Multiplicity Algorithm, and compare 4 classifiers trained on a data set generated from extracting these properties from randomly generated regular sequeces.
 img: /assets/img/ROC_Curve.png
-importance: 4
+importance: 5
 category: work
 ---
 
