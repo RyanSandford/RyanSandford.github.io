@@ -2,8 +2,8 @@
 layout: page
 permalink: /publications/
 title: publications
-description: publications by categories in reversed chronological order.
-years: [2021,2022,2025]
+description: A collection of publications and corresponding artifacts.
+years: [2025,2022,2021]
 nav: true
 ---
 

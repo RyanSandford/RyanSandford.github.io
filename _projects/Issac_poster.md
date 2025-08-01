@@ -1,8 +1,8 @@
 ---
 layout: page
-title: ISSAC 2025 Poster
+title: International Symposium on Symbolic and Algebraic Computation 2025 Poster
 description: Time complexity bounds for the generalization Fulton's intersection multiplicity algorithm
-img: /assets/img/poster_thumbnail.png
+img: /assets/img/GFIMA_unoptimizaed_example.png
 importance: 1
 category: work
 ---

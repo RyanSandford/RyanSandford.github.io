@@ -13,8 +13,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-This website remains as an archive of my academic portfolio, containing useful links to
-former publications and projects.
+Though my primary work is now in industry, I continue to engage in academic research recreationally and through collaborations. This site documents previous work and provides access to ongoing projects and recent publications.
 
 ### Education
 
@@ -31,5 +30,6 @@ Some of my interests include:
 
 * Computer Algebra and Symbolic Computation
 * Computational Algebraic Geometry
-* Formalization
+* Formal Methods
+* Verification
 * Homotopy Type Theory
