@@ -12,7 +12,7 @@
   Ryan Sandford
 
 
-  | blog
+  | Lean 3 Homotopy Type Theory Library Contribution
 
 </title>
 <meta name="description" content="">
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♾️</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/blog/">
+<link rel="canonical" href="/projects/hott/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -123,8 +123,6 @@
           
           
           
-          
-          
           <li class="nav-item ">
               <a class="nav-link" href="/projects/">
                 projects
@@ -159,8 +157,8 @@
           
           
           
-            <div class = "toggle-container">
-              <a id = "light-toggle">
+            <div class="toggle-container">
+              <a id="light-toggle">
                   <i class="fas fa-moon"></i>
                   <i class="fas fa-sun"></i>
               </a>
@@ -179,56 +177,88 @@
     <div class="container mt-5">
       <div class="post">
 
-  <div class="header-bar">
-    <h1>al-folio</h1>
-    <h2>a simple whitespace theme for academics</h2>
-  </div>
+  <header class="post-header">
+    <h1 class="post-title">Lean 3 Homotopy Type Theory Library Contribution</h1>
+    <p class="post-description">Contributed formalized proofs regarding the notion of the 2-adjoint equivalence to the open source Homotopy Type Theory Library in Lean 3</p>
+  </header>
 
+  <article>
+    <p><strong>Homotopy Type Theory (HoTT)</strong> is an intuitionistic type theory which views types
+as abstract, homotopy-invariant objects. As remarked in the HoTT book,
+this correspondence is quite remarkable as it provides a link between
+homotopy theory (which is related to algebraic topology, homological algebra, and higher category theory)
+and type theory, a field of mathematical logic and theoretical computer science.
+HoTT provides a type-theoretic foundation to
+mathematics rather then the conventional set theoretic foundation.
+This in turn, allows for proofs within HoTT to be formalized and
+understood by a computer via a proof assistant.</p>
 
-  <ul class="post-list">
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2021/diagrams/">a post with diagrams</a></h3>
-        <p class="post-meta">July 4, 2021</p>
-        <p>an example of a blog post with diagrams</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2021/distill/">a distill-style blog post</a></h3>
-        <p class="post-meta">May 22, 2021</p>
-        <p>an example of a distill-style blog post and main elements</p>
-      </li>
-    
-      <li>
-        <h3><a class="post-title" href="/blog/2020/github-metadata/">a post with github metadata</a></h3>
-        <p class="post-meta">September 28, 2020</p>
-        <p>a quick run down on accessing github metadata.</p>
-      </li>
-    
-  </ul>
+<p>During the summer of 2019, myself, Daniel Carranza, and Jonathan Chang, under the supervision of
+Chris Kapulkin, began exploring the notion of <strong>2-adjoint equivalences</strong> and coherences between types.
+This resulted in the construction, proof, and formalization of many properties one would expect
+from a 2-adjoint equivalence. The following summer the remaining properties were formalized by Daniel
+Carranza. The final, formalized proofs were added to the
+<a href="https://github.com/gebner/hott3" target="_blank" rel="noopener noreferrer">HoTT in Lean 3 library</a> and can be found in
+the <a href="https://github.com/gebner/hott3/tree/master/src/hott/types/2_adj" target="_blank" rel="noopener noreferrer">2adj</a> directory.
+Moreover, a <a href="https://lmcs.episciences.org/7124" target="_blank" rel="noopener noreferrer">paper</a> describing the 2-adjoint equivalence and its formalization was
+published to the journal of Logical Methods in Computer Science.
+Additional links are provided in the <a href="https://ryansandford.github.io/publications/" target="_blank" rel="noopener noreferrer">publication</a> section of this site.</p>
 
-  
-<nav aria-label="Blog page naviation">
-  <ul class="pagination pagination-lg justify-content-center">
-    <li class="page-item disabled">
-      <a class="page-link" href="" tabindex="-1" aria-disabled="">Newer</a>
-    </li>
-    
-      
-        <li class="page-item active"><a class="page-link" href="/blog/index.html" title="blog">1</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/2/index.html" title="blog - page 2">2</a></li>
-      
-        <li class="page-item "><a class="page-link" href="/blog/page/3/index.html" title="blog - page 3">3</a></li>
-      
-    
-    <li class="page-item ">
-      <a class="page-link" href="/blog/page/2/">Older</a>
-    </li>
-  </ul>
-</nav>
+<div class="row">
+    <div class="col-sm-7 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/homotopy.jpg" alt="" title="example image">
+    </div>
+    <div class="col-sm-5 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/homotopyhomotopy.jpg" alt="" title="example image">
+    </div>
+</div>
+<div class="caption">
+    Proving equality between types corresponds to showing there is a path between spaces (more specifically,
+      that the path space is inhabited). We can also prove equality of path
+      spaces by considering paths between paths, as we see in the first image, and equality of
+      paths between paths by showing there is a path between paths between paths, as we
+      see in the second image.
 
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/HoTT_table.png" alt="" title="example image">
+    </div>
+</div>
+<div class="caption">
+    Table 1 is provided in section 1 of the HoTT book and provides a comparison between sets, types, logic, and homotopies.
+</div>
 
+<p>A well written and informal introduction to HoTT can be found <a href="http://www.science4all.org/article/homotopy-type-theory/" target="_blank" rel="noopener noreferrer">here</a>.
+The author also provides some very nice visualizations (including the thumbnail of this project).</p>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-4 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/Hott_book_cover.png" alt="" title="example image">
+    </div>
+</div>
+<div class="caption">
+    The Homotopy Type Theory Book.
+</div>
+
+<p><strong>Useful Links:</strong></p>
+
+<ul>
+  <li>
+    <p><a href="https://homotopytypetheory.org" target="_blank" rel="noopener noreferrer">HoTT website</a></p>
+  </li>
+  <li>
+    <p><a href="https://homotopytypetheory.org/book/" target="_blank" rel="noopener noreferrer">HoTT book</a></p>
+  </li>
+  <li>
+    <p><a href="https://en.wikipedia.org/wiki/Homotopy_type_theory" target="_blank" rel="noopener noreferrer">HoTT wikipedia page</a></p>
+  </li>
+  <li>
+    <p><a href="https://github.com/leanprover/lean" target="_blank" rel="noopener noreferrer">Lean 3 Theorem Prover</a></p>
+  </li>
+</ul>
+
+  </article>
 
 </div>
 
