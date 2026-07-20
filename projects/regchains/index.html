@@ -2,7 +2,7 @@
 <html>
 
   <head>
-    <meta http-equiv="refresh" content="3; url=https://RyanSandford.github.io/" />
+    
     <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,7 +12,7 @@
   Ryan Sandford
 
 
-  | Page not found
+  | Regular Chains Library Developer
 
 </title>
 <meta name="description" content="">
@@ -37,7 +37,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>♾️</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="/404.html">
+<link rel="canonical" href="/projects/regchains/">
 
 <!-- JQuery -->
 <!-- jQuery -->
@@ -177,12 +177,59 @@
       <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Page not found</h1>
-    <p class="post-description">Looks like there has been a mistake. Nothing exists here.</p>
+    <h1 class="post-title">Regular Chains Library Developer</h1>
+    <p class="post-description">Developed tools for the regular chains library</p>
   </header>
 
   <article>
-    <p>You will be redirected to the main page within 3 seconds. If not redirected, please click <a href="https://RyanSandford.github.io/">here</a>.</p>
+    <p><strong>Regular chains</strong> are a powerful tool whose main application lies
+in solving systems of polynomial equations, inequations,
+and inequalities, symbolically. Loosely, regular chains
+are triangular systems of polynomial equations with
+desirable computational properties.
+A formal definition of a regular chain and a description of its properties
+and implementation in Maple can be found <a href="https://www.maplesoft.com/support/help/maple/view.aspx?path=RegularChains" target="_blank" rel="noopener noreferrer">here</a>.</p>
+
+<p>I have been developing commands in the
+<em>AlgebraicGeometryTools</em> sub-package of the <em>RegularChains</em> library. In particular,
+my work concerns the <em>IntersectionMultiplicity</em>, <em>TangentCone</em>, and <em>TriangularizeWithMultiplicity</em>
+commands, where I have introduced new, underlying algorithms and improved the implementation
+of previous algorithms. A paper on this work and the resulting performance improvements,
+is underway and will be made available shortly.
+For now, the corresponding slides can be found <a href="https://ryansandford.github.io/assets/pdf/MC2021_slides.pdf" target="_blank" rel="noopener noreferrer">here</a>.</p>
+
+<p>The <em>RegularChains</em> library is available through <a href="https://www.maplesoft.com/products/Maple/" target="_blank" rel="noopener noreferrer">Maple</a> or through the regular chains website <a href="http://www.regularchains.org/" target="_blank" rel="noopener noreferrer">here</a>.</p>
+
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/regular_chains_thumbnail.png" alt="" title="example image">
+    </div>
+</div>
+<div class="caption">
+    The LimitPoints command uses regular chains to compute the limit points of a space curve.
+    Here the space curve (in green) is defined by the intersection of the red and blue surfaces,
+    with limit points (0,0,0) and (0,1,0).
+</div>
+<div class="row">
+    <div class="col-sm mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/tc.png" alt="" title="example image">
+    </div>
+</div>
+<div class="caption">
+  The TangentCone command uses regular chains to compute the tangent cone of a space curve. The
+  resulting tangent cone is displayed here in green.
+</div>
+
+<div class="row justify-content-sm-center">
+    <div class="col-sm-9 mt-3 mt-md-0">
+        <img class="img-fluid rounded z-depth-1" src="/assets/img/mth191.png" alt="" title="example image">
+    </div>
+</div>
+<div class="caption">
+    The TriangularizeWithMultiplicity command can be used to solve a system of polynomial equations
+    and compute the intersection multiplicity at each solution. Above we display the polynomial system mth191, for which TriangularizeWithMultiplicity returns 8 solutions in the form of regular chains, and their corresponding
+    intersection multiplicities.
+</div>
 
   </article>
 
