@@ -101,9 +101,9 @@
     {% endif %}
     {% if entry.auth %}
       {% if entry.auth contains '://' %}
-      <a href="{{ entry.auth }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Preprint</a>
+      <a href="{{ entry.auth }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="nofollow">Preprint</a>
       {% else %}
-      <a href="{{ entry.auth | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank">Preprint</a>
+      <a href="{{ entry.auth | prepend: '/assets/pdf/' | relative_url }}" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="nofollow">Preprint</a>
       {% endif %}
     {% endif %}
     {% if entry.supp %}
