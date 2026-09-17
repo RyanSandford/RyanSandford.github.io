@@ -1,7 +1,4 @@
----
-permalink: /robots.txt
----
 User-agent: *
 Disallow: /assets/pdf/casc2021-author-manuscript.pdf
 
-Sitemap: {{ site.baseurl | prepend: site.url }}/sitemap.xml
+Sitemap: https://RyanSandford.github.io/sitemap.xml
